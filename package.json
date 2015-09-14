@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-renarsvilnis",
+  "version": "1.0.0",
+  "description": "Personal eslint configuration for use with es6 and react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renarsvilnis/eslint-config-renarsvilnis.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "es6",
+    "es2015",
+    "babel",
+    "react"
+  ],
+  "author": "Renārs Vilnis <renars.vilnis@gmail.com> (https://renarsvilnis.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renarsvilnis/eslint-config-renarsvilnis/issues"
+  },
+  "homepage": "https://github.com/renarsvilnis/eslint-config-renarsvilnis#readme"
+}
