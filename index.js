@@ -43,7 +43,6 @@ module.exports = {
     "react/jsx-no-duplicate-props": [2, {"ignoreCase": false}],
     "react/jsx-no-literals": 1,
     "react/jsx-no-undef": 2,
-    "react/jsx-quotes": [2, "double", "avoid-escape"],
     "react/jsx-sort-prop-types": [1, {"ignoreCase": false}],
     "react/jsx-sort-props": [1, {"ignoreCase": true}],
     "react/jsx-uses-react": 1,
