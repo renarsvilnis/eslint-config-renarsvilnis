@@ -7,7 +7,7 @@ Personal eslint configuration based on [semistandard](https://github.com/Flet/se
 # Add the configuration
 npm i -D eslint-config-renarsvilnis
 
-# Add all necessary dependencies for the configuration
+# Add all necessary peer dependencies for the configuration
 npm i -D eslint
 npm i -D babel-eslint
 npm i -D eslint-config-semistandard
