@@ -14,6 +14,7 @@ npm i -D eslint-config-semistandard
 npm i -D eslint-plugin-standard
 npm i -D eslint-plugin-babel
 npm i -D eslint-plugin-react
+npm i -D eslint-plugin-standard
 ```
 
 2. Add `.eslintrc` file into the root of your project
