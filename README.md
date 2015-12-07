@@ -10,8 +10,8 @@ npm i -D eslint-config-renarsvilnis
 # Add all necessary peer dependencies for the configuration
 npm i -D eslint
 npm i -D babel-eslint
+npm i -D eslint-config-standard
 npm i -D eslint-config-semistandard
-npm i -D eslint-plugin-standard
 npm i -D eslint-plugin-babel
 npm i -D eslint-plugin-react
 npm i -D eslint-plugin-standard
