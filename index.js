@@ -39,7 +39,7 @@ module.exports = {
     "react/jsx-closing-bracket-location": [1, {"location": "tag-aligned"}],
     "react/jsx-curly-spacing": [2, "never"],
     "react/jsx-indent-props": [1, 2],
-    "react/jsx-max-props-per-line": [1, {"maximum": 1}],
+    "react/jsx-max-props-per-line": [1, {"maximum": 2}],
     "react/jsx-no-duplicate-props": [2, {"ignoreCase": false}],
     "react/jsx-no-literals": 1,
     "react/jsx-no-undef": 2,
