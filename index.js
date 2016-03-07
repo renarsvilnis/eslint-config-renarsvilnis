@@ -34,7 +34,7 @@ module.exports = {
 
     // react plugin
     // Reference: https://github.com/yannickcr/eslint-plugin-react
-    "react/display-name": [2, {"acceptTranspilerName": true}],
+    "react/display-name": [2, {"ignoreTranspilerName": false}],
     "react/jsx-boolean-value": [1, "never"],
     "react/jsx-closing-bracket-location": [1, {"location": "tag-aligned"}],
     "react/jsx-curly-spacing": [2, "never"],
