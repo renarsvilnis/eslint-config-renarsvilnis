@@ -1,14 +1,7 @@
 module.exports = {
-  // Dependencies
-  // eslint - will need to include manualy
-  // eslint-config-semistandard
-  // eslint-plugin-babel
-  // eslint-plugin-react
-  // babel-eslint
-
   // Later for charable configs
   // Reference: http://eslint.org/docs/developer-guide/shareable-configs
-  "extends": ["semistandard"],
+  "extends": ["standard"],
 
   "ecmaFeatures": {
     "jsx": true
@@ -23,7 +16,13 @@ module.exports = {
 
     // esling rules
     // Reference: http://eslint.org/docs/rules/
-    // instead of using esliny rules we use semistandard
+    // instead of using esliny rules we use standard
+
+    // enable back semicolons
+    // instead of using semistandard
+    "semi": [2, "always"],
+    "no-extra-semi": 2,
+    "semi-spacing": [2, { "before": false, "after": true }],
 
     "jsx-quotes": [2, "prefer-double"],
 
