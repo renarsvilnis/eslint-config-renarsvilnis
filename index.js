@@ -23,7 +23,9 @@ module.exports = {
 
     // esling rules
     // Reference: http://eslint.org/docs/rules/
-    // instead of using eslin rules we use semistandard
+    // instead of using esliny rules we use semistandard
+
+    "jsx-quotes": [2, "prefer-double"],
 
     // babel plugin
     "babel/generator-star-spacing": 1,
