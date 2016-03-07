@@ -8,13 +8,7 @@ Personal eslint configuration based on [semistandard](https://github.com/Flet/se
 npm i -D eslint-config-renarsvilnis
 
 # Add all necessary peer dependencies for the configuration
-npm i -D eslint
-npm i -D babel-eslint
-npm i -D eslint-config-standard
-npm i -D eslint-config-semistandard
-npm i -D eslint-plugin-babel
-npm i -D eslint-plugin-react
-npm i -D eslint-plugin-standard
+npm i -D eslint babel-eslint eslint-config-standard eslint-config-semistandard eslint-plugin-babel eslint-plugin-react eslint-plugin-standard
 ```
 
 2. Add `.eslintrc` file into the root of your project
