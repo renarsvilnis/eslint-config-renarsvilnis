@@ -1,5 +1,5 @@
 # eslint-config-renarsvilnis
-Personal eslint configuration based on [semistandard](https://github.com/Flet/semistandard) which is based on [standard](https://github.com/feross/standard) for usage with [babel](http://babeljs.io/) and [react.js](http://facebook.github.io/react/)
+Personal eslint configuration based on [Standard](https://github.com/Flet/semistandard), but with semicolons for usage with [babel](http://babeljs.io/) and [react.js](http://facebook.github.io/react/).
 
 > Updated to eslint `v2`.
 > For now ussing `v.2.2.0` instead of the newest `v.2.3.0` because of a [bugs](https://github.com/eslint/eslint/issues/5493).
