@@ -49,16 +49,22 @@ module.exports = {
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 2,
     "react/no-danger": 1,
-    "react/no-did-mount-set-state": 1,
-    "react/no-did-update-set-state": 1,
     "react/no-multi-comp": 1,
-    "react/no-set-state": 1,
     "react/no-unknown-property": 2,
     "react/prop-types": 2,
     "react/react-in-jsx-scope": 1,
     "react/require-extension": 2,
     "react/self-closing-comp": 2,
     "react/sort-comp": 1,
-    "react/wrap-multilines": 2
+    "react/wrap-multilines": 2,
+    // most of the state should be in your flux implementation, but there
+    // are valid reasons for having state in components, just know what
+    // your doing
+    "react/no-set-state": 0,
+    // keeping these as warning, any state changing in these could only happend
+    // if an async action is sent, else there willbe layout trashing and
+    // multiple render calls
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
   }
 };
