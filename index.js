@@ -9,54 +9,60 @@ module.exports = {
   "plugins": [
     "standard",
     "babel",
-    "react"
+    "react",
+    "import"
   ],
   "parser": "babel-eslint",
   "rules": {
 
+    // #########################################################################
     // esling rules
-    // Reference: http://eslint.org/docs/rules/
-    // instead of using esliny rules we use standard
+    // @ref http://eslint.org/docs/rules/
+    // #########################################################################
+
+    // instead of using configuring rules we use standard
 
     // enable back semicolons
-    // instead of using semistandard
-    "semi": [2, "always"],
-    "no-extra-semi": 2,
-    "semi-spacing": [2, { "before": false, "after": true }],
+    // instead of using semistandard dependency
+    "semi": ['error', "always"],
+    "no-extra-semi": 'error',
+    "semi-spacing": ['error', { "before": false, "after": true }],
 
-    "jsx-quotes": [2, "prefer-double"],
+    // use double qoutes similar as html (pure preference)
+    "jsx-quotes": ['error', "prefer-double"],
 
+    // #########################################################################
     // babel plugin
-    "babel/generator-star-spacing": 1,
-    "babel/new-cap": 1,
-    "babel/object-curly-spacing": 1,
-    "babel/object-shorthand": 1,
-    "babel/arrow-parens": 1,
+    // #########################################################################
+    "babel/generator-star-spacing": 'warn',
+    "babel/new-cap": 'warn',
+    "babel/object-curly-spacing": 'warn',
+    "babel/object-shorthand": 'warn',
+    "babel/arrow-parens": 'warn',
 
+    // #########################################################################
     // react plugin
-    // Reference: https://github.com/yannickcr/eslint-plugin-react
-    "react/display-name": [2, {"ignoreTranspilerName": false}],
-    "react/jsx-boolean-value": [1, "never"],
-    "react/jsx-closing-bracket-location": [1, {"location": "tag-aligned"}],
-    "react/jsx-curly-spacing": [2, "never"],
-    "react/jsx-indent-props": [1, 2],
-    "react/jsx-max-props-per-line": [1, {"maximum": 2}],
-    "react/jsx-no-duplicate-props": [2, {"ignoreCase": false}],
-    "react/jsx-no-literals": 1,
-    "react/jsx-no-undef": 2,
-    // "react/jsx-sort-prop-types": [1, {"ignoreCase": false}],
-    // "react/jsx-sort-props": [1, {"ignoreCase": true}],
-    "react/jsx-uses-react": 1,
-    "react/jsx-uses-vars": 2,
-    "react/no-danger": 1,
-    "react/no-multi-comp": 1,
-    "react/no-unknown-property": 2,
-    "react/prop-types": 2,
-    "react/react-in-jsx-scope": 1,
-    "react/require-extension": 2,
-    "react/self-closing-comp": 2,
-    "react/sort-comp": 1,
-    "react/wrap-multilines": 2,
+    // @ref https://github.com/yannickcr/eslint-plugin-react
+    // #########################################################################
+    "react/display-name": ['error', {"ignoreTranspilerName": false}],
+    "react/jsx-boolean-value": ['warn', "never"],
+    "react/jsx-closing-bracket-location": ['warn', {"location": "tag-aligned"}],
+    "react/jsx-curly-spacing": ['error', "never"],
+    "react/jsx-indent-props": ['warn', 'error'],
+    "react/jsx-max-props-per-line": ['warn', {"maximum": 'error'}],
+    "react/jsx-no-duplicate-props": ['error', {"ignoreCase": false}],
+    "react/jsx-no-literals": 'warn',
+    "react/jsx-no-undef": 'error',
+    "react/jsx-uses-react": 'warn',
+    "react/jsx-uses-vars": 'error',
+    "react/no-danger": 'warn',
+    "react/no-multi-comp": 'warn',
+    "react/no-unknown-property": 'error',
+    "react/prop-types": 'error',
+    "react/react-in-jsx-scope": 'warn',
+    "react/self-closing-comp": 'error',
+    "react/sort-comp": 'warn',
+    "react/jsx-wrap-multilines": 'error',
     // most of the state should be in your flux implementation, but there
     // are valid reasons for having state in components, just know what
     // your doing
@@ -64,7 +70,17 @@ module.exports = {
     // keeping these as warning, any state changing in these could only happend
     // if an async action is sent, else there willbe layout trashing and
     // multiple render calls
-    "react/no-did-mount-set-state": 1,
-    "react/no-did-update-set-state": 1,
+    "react/no-did-mount-set-state": 'warn',
+    "react/no-did-update-set-state": 'warn',
+
+    // #########################################################################
+    // import plugin
+    // @ref https://www.npmjs.com/package/eslint-plugin-import
+    // #########################################################################
+
+    // For basic projects it is to much of a hustle to setup resolving if using
+    // webpack, so be default disable this rule
+    "import/no-unresolved": 'off',
+    "import/no-extraneous-dependencies": 'off',
   }
 };
