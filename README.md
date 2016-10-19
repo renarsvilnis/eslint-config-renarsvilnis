@@ -1,5 +1,5 @@
 # eslint-config-renarsvilnis
-Personal eslint configuration based on [Standard](https://github.com/Flet/semistandard), but with semicolons for usage with [babel](http://babeljs.io/) and [react.js](http://facebook.github.io/react/).
+Personal eslint configuration based on [Standard](https://github.com/feross/standard), but with semicolons for usage with [babel](http://babeljs.io/) and [react.js](http://facebook.github.io/react/).
 
 
 ### Usage
