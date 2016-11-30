@@ -19,14 +19,12 @@ module.exports = {
     // 0 - off
     // 1 - warn
     // 2 - error
-    // #########################################################################
-
-    // #########################################################################
-    // esling rules
+    //
+    // List of esling rules
     // @ref http://eslint.org/docs/rules/
     // #########################################################################
 
-    // instead of using configuring rules we use standard
+    // For base configuration we use standard - https://github.com/feross/standard
 
     // enable back semicolons
     // instead of using semistandard dependency
@@ -40,11 +38,8 @@ module.exports = {
     // #########################################################################
     // babel plugin
     // #########################################################################
-    "babel/generator-star-spacing": 1,
     "babel/new-cap": 1,
     "babel/object-curly-spacing": 1,
-    "babel/object-shorthand": 1,
-    "babel/arrow-parens": 1,
 
     // #########################################################################
     // react plugin
