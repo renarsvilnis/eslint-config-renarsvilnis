@@ -5,8 +5,8 @@ Personal eslint configuration based on [Standard](https://github.com/feross/stan
 ### Usage
 1. Install the NPM module
 ```bash
-# Install the configuration, it install all dependencies automaticy (including eslint)
-npm i -D eslint-config-renarsvilnis
+# Install the configuration, it install all dependencies automatically (excluding eslint)
+npm i -D eslint eslint-config-renarsvilnis
 
 2. Add `.eslintrc` file into the root of your project
 
