@@ -1,4 +1,10 @@
 module.exports = {
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+
   // Later for charable configs
   // Reference: http://eslint.org/docs/developer-guide/shareable-configs
   "extends": ["standard", "standard-jsx"],
@@ -67,6 +73,7 @@ module.exports = {
     // multiple render calls
     "react/no-did-mount-set-state": 1,
     "react/no-did-update-set-state": 1,
+    "react/jsx-no-bind": "error",
 
     // #########################################################################
     // import plugin
