@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-renarsvilnis",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "Personal eslint configuration for use with es6 and react",
   "main": "index.js",
   "scripts": {
@@ -28,13 +28,13 @@
     "babel-eslint": ">=8.0.3",
     "eslint-config-standard": ">=10.2.1",
     "eslint-config-standard-jsx": ">=4.0.2",
+    "eslint-import-resolver-webpack": "0.8.3",
     "eslint-plugin-babel": ">=4.1.2",
     "eslint-plugin-import": ">=2.8.0",
     "eslint-plugin-node": ">=5.2.1",
     "eslint-plugin-promise": ">=3.6.0",
     "eslint-plugin-react": ">=7.5.1",
-    "eslint-plugin-standard": ">=3.0.1",
-    "eslint-import-resolver-webpack": "0.8.3"
+    "eslint-plugin-standard": ">=3.0.1"
   },
   "peerDependencies": {
     "eslint": ">=4.13.0"
