@@ -73,7 +73,6 @@ module.exports = {
     // multiple render calls
     "react/no-did-mount-set-state": 1,
     "react/no-did-update-set-state": 1,
-    "react/jsx-no-bind": "error",
 
     // #########################################################################
     // import plugin
