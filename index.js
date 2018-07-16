@@ -83,5 +83,13 @@ module.exports = {
     // webpack, so be default disable this rule
     "import/no-unresolved": 0,
     "import/no-extraneous-dependencies": 0,
+
+
+    // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+    // Temporary fix for "TypeError: Cannot read property 'range' of null from template-curly-spacing"
+    // Ref: https://github.com/babel/babel-eslint/issues/530
+    // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+    "template-curly-spacing" : "off",
+    "indent" : "off"
   }
 };
