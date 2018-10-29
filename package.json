@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-renarsvilnis",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "description": "Personal eslint configuration for use with es6 and react",
   "main": "index.js",
   "scripts": {
