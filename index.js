@@ -1,24 +1,17 @@
 module.exports = {
-  "env": {
-    "browser": true,
-    "node": true,
-    "jest": true
+  env: {
+    browser: true,
+    node: true,
+    jest: true
   },
 
   // Later for charable configs
   // Reference: http://eslint.org/docs/developer-guide/shareable-configs
-  "extends": ["standard", "standard-jsx"],
+  extends: ["standard", "standard-jsx"],
 
-  "plugins": [
-    "import",
-    "node",
-    "promise",
-    "babel",
-    "react",
-    "standard"
-  ],
-  "parser": "babel-eslint",
-  "rules": {
+  plugins: ["import", "node", "promise", "babel", "react", "standard"],
+  parser: "babel-eslint",
+  rules: {
     // #########################################################################
     // Cheatsheet
     // 0 - off
@@ -33,11 +26,14 @@ module.exports = {
 
     // enable back semicolons
     // instead of using semistandard dependency
-    "semi": [2, "always"],
+    semi: [2, "always"],
     "no-extra-semi": 2,
 
     // use double qoutes similar as html (pure preference)
     "jsx-quotes": [2, "prefer-double"],
+
+    // Use babel
+    "object-curly-spacing": "off",
 
     // #########################################################################
     // babel plugin
@@ -49,12 +45,12 @@ module.exports = {
     // react plugin
     // @ref https://github.com/yannickcr/eslint-plugin-react
     // #########################################################################
-    "react/display-name": [2, {"ignoreTranspilerName": false}],
-    "react/jsx-closing-bracket-location": [1, {"location": "tag-aligned"}],
+    "react/display-name": [2, { ignoreTranspilerName: false }],
+    "react/jsx-closing-bracket-location": [1, { location: "tag-aligned" }],
     "react/jsx-curly-spacing": [2, "never"],
     "react/jsx-indent-props": [1, 2],
-    "react/jsx-max-props-per-line": [1, {"maximum": 2}],
-    "react/jsx-no-duplicate-props": [2, {"ignoreCase": false}],
+    "react/jsx-max-props-per-line": [1, { maximum: 2 }],
+    "react/jsx-no-duplicate-props": [2, { ignoreCase: false }],
     "react/jsx-no-literals": 1,
     "react/jsx-uses-react": 1,
     "react/no-danger": 1,
@@ -84,12 +80,11 @@ module.exports = {
     "import/no-unresolved": 0,
     "import/no-extraneous-dependencies": 0,
 
-
     // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
     // Temporary fix for "TypeError: Cannot read property 'range' of null from template-curly-spacing"
     // Ref: https://github.com/babel/babel-eslint/issues/530
     // ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
-    "template-curly-spacing" : "off",
-    "indent" : "off"
+    "template-curly-spacing": "off",
+    indent: "off"
   }
 };
