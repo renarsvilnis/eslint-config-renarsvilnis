@@ -4,19 +4,11 @@ module.exports = {
     node: true,
     jest: true
   },
-  plugins: [
-    "import",
-    "node",
-    "promise",
-    "babel",
-    "react",
-    "standard",
-    "security"
-  ],
+  plugins: ["import", "node", "promise", "babel", "react", "standard"],
   parser: "babel-eslint",
   // Later for charable configs
   // Reference: http://eslint.org/docs/developer-guide/shareable-configs
-  extends: ["standard", "standard-jsx", "plugin:security/recommended"],
+  extends: ["standard", "standard-jsx"],
   rules: {
     // For base configuration we use standard - https://github.com/feross/standard
 
